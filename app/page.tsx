@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   const projects = [
@@ -9,36 +9,43 @@ export default function Home() {
       id: "shera",
       name: "Shera",
       insights: {
-        dailyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
-        weeklyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
+        dailyActiveUsers:
+          "https://eu.posthog.com/shared/0zgcThj0cUSXs-g30n-YS-v5PdbW4Q",
+        weeklyActiveUsers:
+          "https://eu.posthog.com/shared/xUFzFxI3lq5gE0MAJFBBbGKTGvmcmg",
       },
     },
     {
       id: "planeatrepeat",
       name: "PlanEatRepeat",
       insights: {
-        dailyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
-        weeklyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
+        dailyActiveUsers:
+          "https://eu.posthog.com/embedded/d0Li8Ov9K0dZoq6_NwY7eb1vGEY_oQ",
+        weeklyActiveUsers:
+          "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
       },
     },
     {
       id: "whenisf1",
       name: "When is F1",
       insights: {
-        dailyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
-        weeklyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
+        dailyActiveUsers:
+          "https://eu.posthog.com/shared/snzZLdVFqsP9fMJ5-nvDmzndy8vNzQ",
+        weeklyActiveUsers:
+          "https://eu.posthog.com/shared/xrURPFbq_7LXbvBZYmB6SK2Pdhy5vA",
       },
     },
     {
       id: "snack",
       name: "Snack",
       insights: {
-        dailyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
-        weeklyActiveUsers: "https://eu.posthog.com/embedded/Bw0ZSCNXNbnNqpxk4bBKJ64qDWmFQA",
+        dailyActiveUsers:
+          "https://eu.posthog.com/shared/OO3cTBikOEC8ZiZ2GKzUpl5VoD4xaw",
+        weeklyActiveUsers:
+          "https://eu.posthog.com/shared/Gy9Yf8BVHVqZivLgzD-GW4xIYA9iHA",
       },
     },
-  ]
-
+  ];
   return (
     <div className="container mx-auto py-4">
       <h1 className="text-2xl font-bold mb-4">Analytics Dashboard</h1>
@@ -78,11 +85,12 @@ export default function Home() {
               </Card>
             </div>
 
-            {project.id !== projects[projects.length - 1].id && <Separator className="my-3" />}
+            {project.id !== projects[projects.length - 1].id && (
+              <Separator className="my-3" />
+            )}
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
-
