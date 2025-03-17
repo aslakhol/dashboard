@@ -84,10 +84,6 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
-
-            {project.id !== projects[projects.length - 1].id && (
-              <Separator className="my-3" />
-            )}
           </div>
         ))}
       </div>
